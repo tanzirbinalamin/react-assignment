@@ -37,7 +37,7 @@ function Banner() {
         </div>
 
         <div className="buttons flex gap-4 justify-center mt-4">
-          <button className="bg-indigo-950 text-white gap-2 flex items-center px-2 py-2 rounded-xl">
+          <button className="bg-indigo-950 text-white gap-2 flex items-center hover:bg-slate-700 transition-colors duration-300 ease-in-out px-2 py-2 rounded-xl">
             <img src={spotify} alt="" />
             <p>
 
@@ -45,7 +45,7 @@ function Banner() {
             </p>
           </button>
 
-          <button className="bg-indigo-950 text-white gap-2 flex items-center px-2 py-2 rounded-xl ">
+          <button className="bg-indigo-950 hover:bg-slate-700 transition-colors duration-300 ease-in-out text-white gap-2 flex items-center px-2 py-2 rounded-xl ">
             <img src={msg} alt="" />
             <p>
 

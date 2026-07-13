@@ -1,9 +1,14 @@
 
 import './App.css'
-import Banner from './components/Banner'
+
 import Navbar from './components/navbar'
-import About from './components/about'
-import Choose from './components/Choose'
+
+import About from './pages/About'
+import Home from './pages/Home'
+import Choose from './pages/Choose'
+
+import {Routes, Route } from "react-router-dom";
+
 
 function App() {
   
@@ -11,9 +16,13 @@ function App() {
   return (
   <>
   <Navbar/>
-  <Banner/>
-  <About/>
-  <Choose/>
+  <Routes>
+     <Route path="/Home" element={<Home />} />
+    <Route path="/About" element={<About />} />
+    <Route path="/Choose" element={<Choose />} />
+  </Routes>
+
+ 
 
   </>
   )
